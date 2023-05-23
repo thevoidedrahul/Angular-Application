@@ -1,0 +1,20 @@
+.cdk-overlay-pane {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-silver);
+    border-radius: 2.5px;
+  }
+
+  .mat-dialog-container {
+    padding: 0px !important;
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,264 @@
+.input-field {
+  padding: 10px 0 15px 0;
+
+  .label,
+  .input-label {
+    font-family: "Brandon Text Medium";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-london-gray);
+    margin: 0px 0 10px 0;
+    display: block;
+  }
+
+  .mat-form-field {
+    margin-bottom: 2px;
+    height: 50px;
+
+    &.mat-focused {
+      .mat-form-field-outline-thick {
+        color: var(--color-mountain-purple) !important;
+
+        .mat-form-field-outline-end,
+        .mat-form-field-outline-start,
+        .mat-form-field-outline-gap {
+          color: var(--color-mountain-purple) !important;
+        }
+      }
+    }
+
+    &.mat-form-field-invalid {
+      .mat-form-field-outline-thick {
+        color: var(--color-notification) !important;
+
+        .mat-form-field-outline-end,
+        .mat-form-field-outline-start,
+        .mat-form-field-outline-gap {
+          color: var(--color-notification) !important;
+        }
+      }
+    }
+
+    .mat-form-field-outline-thick {
+      color: var(--color-nightshade);
+
+      .mat-form-field-outline-end,
+      .mat-form-field-outline-start,
+      .mat-form-field-outline-gap {
+        color: var(--color-nightshade) !important;
+      }
+    }
+
+    .mat-form-field-wrapper {
+      padding: 0;
+      height: inherit;
+
+      .mat-form-field-flex {
+        height: inherit !important;
+        margin: 0;
+        padding: 0 !important;
+        width: 100%;
+
+        .mat-form-field-outline-end,
+        .mat-form-field-outline-start,
+        .mat-form-field-outline-gap {
+          border-width: 2px !important;
+          color: var(--color-nightshade);
+        }
+
+        .mat-form-field-infix {
+          padding: 0px 0 0 2px !important;
+          box-sizing: border-box;
+          height: inherit !important;
+          border-top: none !important;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          min-width: 200px;
+          width: 100%;
+
+          .mat-chip-list {
+            .mat-chip-list-wrapper {
+              margin: 0 !important;
+              cursor: text;
+
+              .mat-chip {
+                border-color: var(--color-pure-white) !important;
+                background-color: var(--color-pure-white) !important;
+                color: var(--color-nightshade) !important;
+                font-size: 14px !important;
+                letter-spacing: 0 !important;
+                line-height: 17px !important;
+                font-weight: 500 !important;
+                padding: 0px 3px !important;
+                min-height: 20px !important;
+                height: 36px !important;
+                margin: 2px !important;
+
+                .mat-icon {
+                  color: inherit !important;
+                  opacity: 1 !important;
+                  font-size: 14px !important;
+                  width: 14px !important;
+                  height: 14px !important;
+                  top: 4.5px !important;
+                  right: 5px !important;
+                  display: grid !important;
+                  place-content: center !important;
+                  position: unset !important;
+                  margin: 0 0 0 8px !important;
+                  color: var(--color-mountain-purple);
+
+                  &:hover {
+                    color: var(--color-mountain-purple-hover);
+                  }
+                }
+              }
+
+              .primary-chip.mat-chip {
+                color: var(--color-nightshade) !important;
+              }
+
+              .disabled-chip.mat-chip {
+                color: rgb(118, 120, 127) !important;
+              }
+            }
+          }
+
+          input {
+            color: var(--color-nightshade);
+            padding: 16px 12px 12px 12px !important;
+            width: 100% !important;
+            box-sizing: border-box;
+
+            &::placeholder {
+              color: var(--color-disabled);
+              opacity: 1;
+              /* Firefox */
+            }
+
+            &:-ms-input-placeholder {
+              /* Internet Explorer 10-11 */
+              color: var(--color-disabled);
+            }
+
+            &::-ms-input-placeholder {
+              /* Microsoft Edge */
+              color: var(--color-disabled);
+            }
+          }
+
+          .mat-select,
+          .select,
+          select {
+            color: var(--color-nightshade);
+            padding: 16px 12px 12px 12px !important;
+            width: 100% !important;
+            box-sizing: border-box;
+
+            &::placeholder {
+              color: var(--color-disabled);
+              opacity: 1;
+              /* Firefox */
+            }
+
+            &:-ms-input-placeholder {
+              /* Internet Explorer 10-11 */
+              color: var(--color-disabled);
+            }
+
+            &::-ms-input-placeholder {
+              /* Microsoft Edge */
+              color: var(--color-disabled);
+            }
+
+            .mat-select-trigger {
+              color: var(--color-nightshade);
+
+              .mat-select-value {
+                color: var(--color-nightshade);
+              }
+            }
+          }
+        }
+      }
+
+      .mat-form-field-subscript-wrapper {
+        position: relative;
+        margin-top: 8px !important;
+        top: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  &.text-area {
+    height: 90px;
+
+    .mat-form-field {
+      .input-label {
+        font-family: "Brandon Text" !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        line-height: 20px !important;
+        display: block !important;
+        color: var(--color-london-gray);
+        position: absolute !important;
+        top: -31px !important;
+        left: 0px !important;
+      }
+
+      .mat-form-field-wrapper {
+        padding-bottom: 0.34375em !important;
+
+        .mat-form-field-flex {
+          height: 75px !important;
+          padding: 0 !important;
+
+          .mat-form-field-outline-start,
+          .mat-form-field-outline-gap,
+          .mat-form-field-outline-end {
+            height: 75px !important;
+          }
+
+          .mat-form-field-infix {
+            height: 75px !important;
+            padding: 5px !important;
+            display: block;
+            width: 100%;
+
+            .cdk-textarea-autosize,
+            textarea {
+              min-height: 75px !important;
+              max-height: 75px !important;
+              width: calc(100%) !important;
+              padding: 11px !important;
+              box-sizing: border-box;
+              color: var(--color-nightshade);
+
+              &::-webkit-scrollbar-track {
+                background-color: transparent;
+                border-top: 2px solid rgba(0, 0, 0, 0.12);
+              }
+
+              &::-webkit-scrollbar {
+                width: 7px;
+                background-color: transparent;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background-color: var(--color-silver);
+              }
+            }
+          }
+        }
+
+        .mat-form-field-subscript-wrapper {
+          margin-top: 12px !important;
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}

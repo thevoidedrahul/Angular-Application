@@ -1,0 +1,103 @@
+<div class="page-component">
+    <div class="page-header">
+        Create Corporation
+    </div>
+    <div class="page-content">
+        <form [formGroup]="formGroup">
+            <div class="form-flex">
+                <div class="width-50 flex">
+                    <div class="label">
+                        Corporate name
+                    </div>
+                    <div class="input-field">
+                        <mat-form-field appearance="outline">
+                            <input matInput formControlName="name">
+                            <mat-error *ngIf="formControl?.name?.errors?.required">
+                                Name is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="width-50 flex">
+                    <div class="label">
+                        Corporate address
+                    </div>
+                    <div class="input-field">
+                        <mat-form-field appearance="outline">
+                            <input matInput formControlName="address">
+                            <mat-error *ngIf="formControl?.address?.errors?.required">
+                                Address is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="width-50 flex">
+                    <div class="label">
+                        Corporate Invoicing Code
+                    </div>
+                    <div class="input-field">
+                        <mat-form-field appearance="outline">
+                            <input matInput formControlName="invoicingCode">
+                            <mat-error *ngIf="formControl?.invoicingCode?.errors?.required">
+                                Invoicing Code is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="width-50 flex">
+                    <div class="label">
+                        Business Unit
+                    </div>
+                    <div class="input-field">
+                        <mat-form-field appearance="outline">
+                            <mat-select formControlName="businessUnit">
+                                <mat-option value="option1">Option 1</mat-option>
+                                <mat-option value="option2">Option 2</mat-option>
+                                <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="formControl?.businessUnit?.errors?.required">
+                                Business Unit is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="width-100 flex">
+                    <div class="label">
+                        Corporation technical contact
+                    </div>
+                    <div class="input-field">
+                        <mat-form-field appearance="outline">
+                            <input matInput formControlName="technicalContact">
+                            <mat-error *ngIf="formControl?.technicalContact?.errors?.required">
+                                Invoicing Code is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="width-100 flex">
+                    <div class="label">
+                        Further Contact
+                    </div>
+                    <div class="input-field text-area">
+                        <mat-form-field appearance="outline">
+                            <textarea matInput formControlName="furtherContact" #autosize="cdkTextareaAutosize"
+                                cdkAutosizeMinRows="1" cdkTextareaAutosize required></textarea>
+                            <mat-error *ngIf="formControl?.businessUnit?.errors?.required">
+                                Further Contact is required.
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                </div>
+                <div class="width-100 flex flex-end">
+                    <div class="button">
+                        <button type="reset" (click)="closeDialog()">Cancel</button>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" (click)="submitFrom()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

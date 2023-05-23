@@ -1,0 +1,48 @@
+<header>
+    <div class="header flex">
+        <div class="width-50 flex">
+            <div class="menu">
+                <mat-icon>list</mat-icon>
+            </div>
+            <div class="logo">
+                <img src="../../assets/images/logo.png" alt="logo-image" />
+            </div>
+        </div>
+        <div class="width-50 flex flex-end">
+            <div class="input-field">
+                <page-chip value=" Search BU..." background="#CED4DB">
+                </page-chip>
+            </div>
+            <div class="input-field">
+                <page-chip value="Search Region..." background="#CED4DB">
+                </page-chip>
+            </div>
+            <div class="profile-logo">
+                <mat-icon class="material-icons-outlined">
+                    person
+                </mat-icon>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="content">
+        <div class="content-header flex">
+            <div class="input-field">
+                <page-chip value="Armor Holdings" valPadding="0px 4px 0px 6px" background="#CED4DB">
+                </page-chip>
+            </div>
+            <div class="input-field">
+                <page-chip value="Telta Pak AB." valPadding="0px 4px 0px 6px" background="#CED4DB">
+                </page-chip>
+            </div>
+            <div class="input-field">
+                <page-chip value="MCC Group" valPadding="0px 4px 0px 6px" background="#CED4DB">
+                </page-chip>
+            </div>
+        </div>
+        <div class="content-body">
+            <button type="button" (click)="openFormDialog()">Create Corporation</button>
+        </div>
+    </div>
+</main>

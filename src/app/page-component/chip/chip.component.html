@@ -1,0 +1,17 @@
+<div class="chip" [ngStyle]="{'background' : background}">
+    <div class="flex">
+        <div class="pre-icon">
+            <mat-icon>
+                legend_toggle
+            </mat-icon>
+        </div>
+        <div class="name" [ngStyle]="{'padding' : valPadding}">
+            {{value}}
+        </div>
+        <div class="post-icon">
+            <mat-icon>
+                chevron_right
+            </mat-icon>
+        </div>
+    </div>
+</div>

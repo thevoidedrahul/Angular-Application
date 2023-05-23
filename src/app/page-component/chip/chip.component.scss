@@ -1,0 +1,53 @@
+:host {
+  .chip {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: -o-fit-content;
+    width: -ms-fit-content;
+    border: 2px solid var(--color-nightshade);
+    border-radius: 4px;
+    height: 100%;
+
+    .flex {
+      width: 100%;
+      padding: 0 8px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+
+      .pre-icon {
+        width: 18px;
+        height: 18px;
+        display: grid;
+        place-content: center;
+
+        .mat-icon {
+          width: 18px;
+          height: 18px;
+          font-size: 18px;
+          display: grid;
+          place-content: center;
+        }
+      }
+
+      .post-icon {
+        border: 2px solid var(--color-nightshade);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: grid;
+        place-content: center;
+
+        .mat-icon {
+          width: 18px;
+          height: 18px;
+          font-size: 18px;
+          display: grid;
+          place-content: center;
+        }
+      }
+    }
+  }
+}

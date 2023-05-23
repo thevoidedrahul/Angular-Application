@@ -1,0 +1,132 @@
+:host {
+  .page-component {
+    border: 2px solid var(--color-nightshade);
+    border-radius: 4px;
+    padding: 24px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-silver);
+      border-radius: 2.5px;
+    }
+
+    .page-header {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 600;
+    }
+
+    .page-content {
+      margin-top: 20px;
+
+      .form-flex {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+
+        .width-50 {
+          width: calc(50% - 12px);
+
+          &.flex {
+            display: flex;
+            column-gap: 24px;
+
+            .label {
+              width: 38%;
+              display: flex;
+              align-items: center;
+              padding-top: 20px;
+              padding-bottom: 35px;
+              box-sizing: border-box;
+            }
+
+            .input-field {
+              width: 55%;
+            }
+          }
+
+          &.flex-end {
+            justify-content: flex-end;
+            align-items: center;
+            height: 50px;
+
+            button {
+              padding: 8px;
+              width: 100px;
+              border: 2px solid #CED4DB;
+              border-radius: 4px;
+              background-color: #CED4DB;
+              font-size: 14px;
+              line-height: 19px;
+              font-weight: 600;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .width-100 {
+          width: 100%;
+          column-gap: 24px;
+
+          &.flex {
+            display: flex;
+
+            .label {
+              width: fit-content;
+              width: -webkit-fit-content;
+              width: -moz-fit-content;
+              width: -ms-fit-content;
+              width: -o-fit-content;
+              display: flex;
+              align-items: center;
+              padding-top: 20px;
+              padding-bottom: 35px;
+              box-sizing: border-box;
+            }
+
+            .input-field {
+              width: 55%;
+
+              ::ng-deep {
+                .mat-form-field {
+                  .mat-form-field-wrapper {
+                    .mat-form-field-flex {
+                      .mat-form-field-infix {
+                        min-width: 495px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &.flex-end {
+            justify-content: flex-end;
+            align-items: center;
+            height: 50px;
+
+            button {
+              padding: 8px;
+              width: 100px;
+              border: 2px solid #CED4DB;
+              border-radius: 4px;
+              background-color: #CED4DB;
+              font-size: 14px;
+              line-height: 19px;
+              font-weight: 600;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:host {
+  .page-component {
+    border: 2px solid var(--color-nightshade);
+    border-radius: 4px;
+    padding: 24px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-silver);
+      border-radius: 2.5px;
+    }
+
+    .page-header {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .page-content {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
